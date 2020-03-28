@@ -48,6 +48,7 @@ function getPacmanCanevasContext() {
 }
 
 function stopPacman() { 
+	pauseGame();
 	if (PACMAN_MOVING_TIMER != -1) { 
 		clearInterval(PACMAN_MOVING_TIMER);
 		PACMAN_MOVING_TIMER = -1;
@@ -90,6 +91,8 @@ function tryMovePacman(direction) {
 }
 
 function movePacman(direction) {
+	resumeGame();
+
 
 	if (PACMAN_MOVING === false) { 
 		PACMAN_MOVING = true;

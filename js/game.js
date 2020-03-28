@@ -226,15 +226,15 @@ function stopTimes() {
 function pauseGame() { 
 
 	if (!PAUSE) { 
-		stopAllSound();
+		// stopAllSound();
 		PAUSE = true;
 		
-		message("pause");
+		// message("pause");
 		
 		pauseTimes();
-		pausePacman();
+		// pausePacman();
 		pauseGhosts();
-		stopBlinkSuperBubbles();
+		// stopBlinkSuperBubbles();
 	}
 }
 function resumeGame() { 
@@ -248,7 +248,7 @@ function resumeGame() {
 		resumeTimes();
 		resumePacman();
 		resumeGhosts();
-		blinkSuperBubbles();
+		// blinkSuperBubbles();
 	}
 }
 
