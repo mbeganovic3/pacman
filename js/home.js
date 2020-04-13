@@ -54,6 +54,8 @@ function initHome() {
 	LOCK = false;
 	PACMAN_DEAD = false;
 	
+	$('#root').hide();
+	$('#bottom').hide();
 
 	$("#panel").hide();
 	$("#home").show();

@@ -37,6 +37,8 @@ function initGame(newgame) {
 	if (newgame) { 
 		stopPresentation();
 		stopTrailer();
+		$('#root').show();
+		$('#bottom').show();
 	
 		HOME = false;
 		GAMEOVER = false;
@@ -226,7 +228,7 @@ function stopTimes() {
 function pauseGame() { 
 
 	if (!PAUSE) { 
-		// stopAllSound();
+		stopAllSound();
 		PAUSE = true;
 		
 		// message("pause");

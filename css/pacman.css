@@ -27,6 +27,7 @@ html, body {
 	padding: 0px 0px 0px 0px;
 	width: 100%;
 	height: 100%;
+	zoom: 80%;
 }
 html  { 
 	background-color: #000;
@@ -365,7 +366,7 @@ h3 {
 
 
 
-@media screen and (min-height:1200px), screen and (min-device-height : 1200px) { 
+/* @media screen and (min-height:1200px), screen and (min-device-height : 1200px) { 
 	#panel, #home { 
 		zoom: 135%;
 	}
@@ -432,4 +433,37 @@ h3 {
 	#message { 
 		top: 347px;
 	}
+} */
+
+
+.row {
+    font: 24px 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    background-color: black;
+    color: white;
+}
+
+.choice {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+.orientation {
+    position: fixed;
+	bottom: 0;
 }
