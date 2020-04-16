@@ -234,7 +234,7 @@ function pauseGame() {
 		// message("pause");
 		
 		pauseTimes();
-		// pausePacman();
+		pausePacman();
 		pauseGhosts();
 		// stopBlinkSuperBubbles();
 	}
